@@ -7,6 +7,7 @@ class CreateMovies < ActiveRecord::Migration[5.2]
       t.string :director
       t.string :plot
       t.string :image
+      t.belongs_to :tier, index: true
 
       t.timestamps
     end
